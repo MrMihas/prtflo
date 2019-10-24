@@ -140,6 +140,7 @@
               КОротко про мене
             </h2>
           </div>
+          <!-- heaDER -->
 
           <div class="about__text">
             <p>
@@ -172,7 +173,8 @@
 
 
   <!-- portfolio -->
-  <div class="uk-width-1-1">
+  <section class="uk-width-1-1">
+
     <div class="uk-container">
       <div class="portfolio-title">
         <h2 class="uk-heading uk-text-uppercase">
@@ -180,6 +182,8 @@
         </h2>
       </div>
     </div>
+
+    <!-- header -->
 
     <div class="portfolio__works uk-margin-medium-top uk-grid-match uk-child-width-1-3@m" data-uk-grid="">
       <div class="uk-card uk-card-default uk-overflow-hidden">
@@ -211,7 +215,11 @@
         </div>
       </div>
     </div>
-  </div>
+
+    <!-- portfolio__works -->
+  </section>
+
+  <!-- portfolio -->
 
 
   <section class="feedback uk-width-1-1 uk-margin-large-top uk-margin-large-bottom uk-child-width-1-1 uk-position-relative" data-uk-grid>
@@ -219,31 +227,87 @@
     <div class="uk-container uk-margin-auto ">
       <header class="feedback__header uk-text-center">
         <h2 class="uk-heading uk-text-uppercase">
-          зворотній св'язок
+          зворотній зв'язок
         </h2>
       </header>
     </div>
-
-
+    <!-- header -->
     <div class="feedback__form uk-container uk-margin-auto">
-        <form action="feeback.php" method="post" class="uk-form uk-flex uk-flex-between" data-uk-grid>
+		<header class="feedback__header-write uk-text-center">
+		        <h4 class="uk-heading uk-text-uppercase">
+		          напиши мені
+		        </h4>
+      </header>
+		<!-- header -->
+        <form action="feeback.php" method="post" class="uk-margin-medium-top uk-form uk-flex uk-flex-between" data-uk-grid>
           
-         <div class="custom-input uk-width-1-2"> <input type="text" placeholder="Повне ім'я"></div>
-         <div class="custom-input uk-width-1-2"> <input type="text" placeholder="Ваш e-mail"></div>
+         <div class="custom-input uk-width-1-2"> <input type="text" name="userName" placeholder="Повне ім'я"></div>
+         <div class="custom-input uk-width-1-2"> <input type="email" name="userEmail" placeholder="Ваш e-mail"></div>
          <div class="custom-textarea uk-width-1-1"> 
-            <textarea name="" id="" class="uk-textarea" placeholder="Ваше повідомлення"></textarea>
+            <textarea name="userText"  class="uk-textarea" placeholder="Ваше повідомлення"></textarea>
          </div>
 
          <div class="form-button uk-width-1-3 uk-margin-auto uk-text-center">
            <input type="submit" value="Відправити" class="uk-button">
          </div>
-
-
-
         </form>
-      </div>
 
+        <!-- /form -->
+      </div>
+      <!-- /feedback__form -->
+
+
+      <div class="social uk-container uk-margin-auto uk-margin-large-top">
+
+                 <div class="uk-container uk-margin-auto ">
+                  <header class="feedback__header-social uk-text-center">
+                    <h4 class="uk-heading uk-text-uppercase">
+                      Я у соц.мережах
+                    </h4>
+                  </header>
+                 </div>
+				<!-- header -->
+	      <div class="social__links uk-container uk-margin-medium-top uk-text-center">
+		        <a class="uk-icon-button" href="#0">
+		          <span uk-icon="icon: facebook; ratio: 1.5"></span>
+		        </a>
+		        <a class="uk-icon-button" href="#0">
+		          <span uk-icon="icon: instagram; ratio: 1.5"></span>
+		        </a>
+		        <a class="uk-icon-button" href="#0">
+		          <span uk-icon="icon: github; ratio: 1.5"></span>
+		        </a>
+		       
+	      </div>
+		<!-- social__links -->
+
+
+      </div>
+<!-- social -->
   </section>
+<!-- feedback -->
+
+
+
+  <footer class="footer uk-width-1-1 uk-margin-large-top uk-child-width-1-1" data-uk-grid>
+    <div class="uk-container uk-flex uk-flex-middle uk-margin-auto">
+        <div class="uk-width-1-2 footer__contact uk-text-center uk-flex">
+        	<a href="https://t.me/chaytac_m200" class="footer__links">
+        		<span class="uk-icon uk-icon-image footer__links-main" style="background-image: url(images/telega_main.png);"></span>
+        		<span class="uk-icon uk-icon-image footer__links-hover" style="background-image: url(images/telega_hover.png);"></span>
+        	</a>
+
+        	<a href="viber://chat?number=+380635379373" class="footer__links">
+        		<span class="uk-icon uk-icon-image footer__links-main" style="background-image: url(images/viber_main.png);"></span>
+        		<span class="uk-icon uk-icon-image footer__links-hover" style="background-image: url(images/viber_hover.png);"></span>
+
+        	</a>
+
+        </div>
+    <div class="uk-width-1-2 footer__menu uk-text-center">asasas</div>
+
+    </div>
+  </footer>
 
 
   <script src="js/uikit.min.js"></script>

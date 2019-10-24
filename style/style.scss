@@ -300,12 +300,40 @@ $dark-theme-color: #1C1401;
         }
     }
 
+
     .feedback__form{
+
+
+
+       .feedback__header-write{
+            position: relative;
+                h4{
+                letter-spacing: 2px;
+                font-family: $font-mono;
+                color: $dark-theme-color;
+                font-weight: 600;
+                position: relative;
+                display: inline;
+                position: relative;
+
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background: $form-color;
+                        bottom: -14px;
+                        left: 0;
+                    }
+                }
+             }
+
+
         .custom-input{
             input{
                 width: 80%;
                 border: none;
-                margin: 10px 15px;
+                margin: 10px 0px;
                 border-bottom: 1px solid rgba(0,0,0,0.3);
                 -webkit-transition: 0.2s;
                 -moz-transition: 0.2s;
@@ -322,7 +350,15 @@ $dark-theme-color: #1C1401;
                     border-bottom:  1px solid $form-color;
                 }
 
+                
+
             }
+            &:nth-child(2){
+                    input{
+                        float: right;
+                        
+                    }
+                }
             
         }
 
@@ -349,4 +385,114 @@ $dark-theme-color: #1C1401;
             }
         }
     }
+
+
+    .social{
+        .feedback__header-social{
+        h4{
+            letter-spacing: 2px;
+            font-family: $font-mono;
+            color: $dark-theme-color;
+            font-weight: 600;
+            position: relative;
+            display: inline;
+            position: relative;
+
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background: $form-color;
+                    bottom: -14px;
+                    left: 0;
+                }
+            }
+         }
+
+         .social__links{
+            a{
+                margin: 0px 10px;
+                -webkit-transition: 0.3s;
+                -moz-transition: 0.3s;
+                -ms-transition: 0.3s;
+                -o-transition: 0.3s;
+                transition: 0.3s;
+                
+
+                span{
+                    color: $form-color;
+                }
+                    &:hover span{
+                        color: #f1f1f1;
+                    }
+
+                &:hover{
+                    background: $form-color;
+                }
+            }
+         }
+     
+    }
+}
+
+
+.footer{
+    position: relative;
+    margin: 0 !important;
+    height: 80px;
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: $color-link__active;
+        }
+
+        .footer__contact{
+            .footer__links{
+                position: relative;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                justify-content: center;
+                -ms-align-items: center;
+                align-items: center;
+                width: 45px !important;
+                height: 45px !important;
+                border-radius: 50%;
+                    transition: 0.3s;
+
+                span{
+                    position: absolute;
+                    width: 40px !important;
+                    height: 40px !important;
+                    top: 0;
+                    left: 0;
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
+
+                .footer__links-hover{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+                &:hover .footer__links-main{
+                    opacity: 0;
+                    visibility: hidden;
+                    
+                }
+                &:hover .footer__links-hover{
+                    opacity: 1;
+                    visibility: visible;
+                    
+                }
+            }
+        }
 }
