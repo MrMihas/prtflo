@@ -15,13 +15,17 @@
 
 <body>
 
-  <!--обложка -->
-  <div class="wrapper uk-background-cover uk-position-absolute uk-background-cover uk-background-norepeat"></div>
+  <!--slider -->
 
-  <!-- navigation -->
+<div class="wrapper">
+
+ <!-- navigation -->
 
   <div class="nav-block uk-width-1-1 uk-visible@s">
     <nav class="uk-navbar-container uk-navbar-transparent uk-flex uk-flex-middle" data-uk-navbar>
+      <a href="/" class="uk-navbar-item uk-logo">
+        <img src="images/logo.png" alt="">
+      </a>
       <div class="uk-navbar-right ">
         <ul class="uk-navbar-nav uk-margin-xlarge-right">
           <li>
@@ -42,16 +46,16 @@
   </div>
   <!-- offer -->
 
-  <div class="uk-container">
+  <!-- <div class="uk-container">
     <div class="uk-grid uk-flex uk-flex-center wellcome uk-flex-column" data-uk-grid>
-      <div class="uk-width-xlarge">
+      <div class="uk-width-xlarge offer-letters">
         <h2 class="uk-heading-medium uk-text-uppercase">
           Привіт!
         </h2>
       </div>
-      <div class="uk-width-xlarge">
+      <div class="uk-width-xlarge offer-letters">
         <h4 class="uk-headend-medium">
-          Бажання - Рух - Перемога
+          Ціль - Рух - Перемога
         </h4>
       </div>
       <div class="uk-width-xlarge uk-margin-medium-top">
@@ -59,14 +63,117 @@
       </div>
     </div>
   </div>
+ -->
 
-  <div class="uk-container uk-flex uk-flex-center uk-position-relative uk-width-1-1 dots">
-    <div class="dots-span uk-flex uk-flex-column uk-position-relative">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+
+      <div class="nav-dots">
+        <div class="nav-dot" data-slide="1">
+        </div>
+        <div class="nav-dot" data-slide="2">
+        </div>
+        <div class="nav-dot" data-slide="3">
+        </div>
+        <div class="nav-dot" data-slide="4">
+        </div>
+        <div class="nav-dot" data-slide="5">
+        </div>
+      </div>
+
+
+  <div class="panel uk-panel" data-slide="1">
+    <div class="trans-layer" id="layer-1"></div>
+    <section class="section" id="section-1">
+       <div class="uk-container uk-position-absolute slide-text">
+           <div class="uk-grid uk-flex wellcome uk-flex-column" data-uk-grid>
+             <div class="uk-width-large offer-letters uk-margin-medium-top">
+                  <h1 class="uk-heading uk-text-uppercase uk-padding uk-padding-remove-bottom">
+                    Чистий валідний код
+                  </h1>
+
+                  <h6 class="uk-heading uk-text-uppercase uk-padding uk-padding-remove-top">
+                    Дотримання методології БЕМ
+                  </h6>
+              </div>
+           </div>
+        </div>
+        <!-- slide-text   -->
+      <div class="section-content">
+        <img src="images/slide-1.jpeg" alt="">
+      </div>
+    </section>
   </div>
+
+
+
+  <div class="panel" data-slide="2">
+    <div class="trans-layer" id="layer-2"></div>
+    <section class="section" id="section-2">
+    
+     <div class="uk-container uk-position-absolute slide-text">
+           <div class="uk-grid uk-flex wellcome uk-flex-column" data-uk-grid>
+             <div class="uk-width-large offer-letters uk-margin-medium-top">
+                  <h1 class="uk-heading uk-text-uppercase uk-padding uk-padding-remove-bottom">
+                   Шалена швидкість
+                  </h1>
+
+                  <h6 class="uk-heading uk-text-uppercase uk-padding uk-padding-remove-top">
+                    Швидкість сайтів у зеленій зоні
+                  </h6>
+              </div>
+           </div>
+        </div>
+        <!-- slide-text   -->
+
+      <div class="section-content">
+        <img src="images/slide-4.png" alt="">
+      </div>
+    </section>
+  </div>
+  <div class="panel" data-slide="3">
+    <div class="trans-layer" id="layer-3"></div>
+    <section class="section" id="section-3">
+
+ <div class="uk-container uk-position-absolute slide-text">
+           <div class="uk-grid uk-flex wellcome uk-flex-column" data-uk-grid>
+             <div class="uk-width-large offer-letters uk-margin-medium-top">
+                  <h1 class="uk-heading uk-text-uppercase uk-padding uk-padding-remove-bottom">
+                   Сучасний блог
+                  </h1>
+
+                  <h6 class="uk-heading uk-text-uppercase uk-padding uk-padding-remove-top">
+                    Інтеграція верстки на найпопулярнішу СMS
+                  </h6>
+              </div>
+           </div>
+        </div>
+        <!-- slide-text   -->
+
+
+
+      <div class="section-content">
+       <img src="images/slide-5.png" alt="">
+      </div>
+    </section>
+  </div>
+  <div class="panel" data-slide="4">
+    <div class="trans-layer" id="layer-4"></div>
+    <section class="section" id="section-4">
+      <div class="section-content">
+        <h1>Section 4</h1>
+      </div>
+    </section>
+  </div>
+  <div class="panel" data-slide="5">
+    <div class="trans-layer" id="layer-5"></div>
+    <section class="section" id="section-5">
+      <div class="section-content">
+        <h1>Section 5</h1>
+      </div>
+    </section>
+  </div>
+</div>
+
+
 
   <!-- about -->
 
@@ -235,7 +342,7 @@
     <div class="feedback__form uk-container uk-margin-auto">
 		<header class="feedback__header-write uk-text-center">
 		        <h4 class="uk-heading uk-text-uppercase">
-		          напиши мені
+		          напиши
 		        </h4>
       </header>
 		<!-- header -->
@@ -262,7 +369,7 @@
                  <div class="uk-container uk-margin-auto ">
                   <header class="feedback__header-social uk-text-center">
                     <h4 class="uk-heading uk-text-uppercase">
-                      Я у соц.мережах
+                      Знайди
                     </h4>
                   </header>
                  </div>
@@ -277,6 +384,17 @@
 		        <a class="uk-icon-button" href="#0">
 		          <span uk-icon="icon: github; ratio: 1.5"></span>
 		        </a>
+
+            <a href="https://t.me/chaytac_m200" class="uk-icon-button">
+              <span class="uk-icon uk-icon-image __links-main" style="background-image: url(images/telega_main.png);"></span>
+            <span class="uk-icon uk-icon-image __links-hover" style="background-image: url(images/telega_hover.png);"></span>
+            </a>
+          
+          <a href="viber://chat?number=+380635379373" class="uk-icon-button">
+            <span class="uk-icon uk-icon-image __links-main" style="background-image: url(images/viber_main.png);"></span>
+            <span class="uk-icon uk-icon-image __links-hover" style="background-image: url(images/viber_hover.png);"></span>
+          </a>
+
 		       
 	      </div>
 		<!-- social__links -->
@@ -291,20 +409,31 @@
 
   <footer class="footer uk-width-1-1 uk-margin-large-top uk-child-width-1-1" data-uk-grid>
     <div class="uk-container uk-flex uk-flex-middle uk-margin-auto">
-        <div class="uk-width-1-2 footer__contact uk-text-center uk-flex">
-        	<a href="https://t.me/chaytac_m200" class="footer__links">
-        		<span class="uk-icon uk-icon-image footer__links-main" style="background-image: url(images/telega_main.png);"></span>
-        		<span class="uk-icon uk-icon-image footer__links-hover" style="background-image: url(images/telega_hover.png);"></span>
-        	</a>
+        <section class="uk-width-1-2 footer__contact uk-text-center uk-flex">
 
-        	<a href="viber://chat?number=+380635379373" class="footer__links">
-        		<span class="uk-icon uk-icon-image footer__links-main" style="background-image: url(images/viber_main.png);"></span>
-        		<span class="uk-icon uk-icon-image footer__links-hover" style="background-image: url(images/viber_hover.png);"></span>
+          <div class="logo">
+            <img src="images/logo.png" alt="logo" class="uk-logo">
+          </div>
 
-        	</a>
-
-        </div>
-    <div class="uk-width-1-2 footer__menu uk-text-center">asasas</div>
+        </section>
+    <section class="uk-width-1-2 footer__menu uk-text-center">
+      <div class="footer__nav uk-flex uk-flex-between">
+          <ul class="uk-navbar-nav uk-margin-xlarge-right">
+          <li>
+            <a href="#0" rel="noopener noreferrer">Головна</a>
+          </li>
+          <li>
+            <a href="#0" rel="noopener noreferrer">про мене</a>
+          </li>
+          <li>
+            <a href="#0" rel="noopener noreferrer">портфоліо</a>
+          </li>
+          <li>
+            <a href="#0" rel="noopener noreferrer">контакти</a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     </div>
   </footer>
@@ -312,6 +441,8 @@
 
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
