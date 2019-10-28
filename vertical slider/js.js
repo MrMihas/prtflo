@@ -1,13 +1,5 @@
 
-
 $('.wrapper').each(function() {
-
-
-setInterval(function () {
-        nextSlide();
-    }, 7000);
-  
-
   var $slider = $(this);
   var numberOfSlides = $slider.find('.panel').length;
 
@@ -27,6 +19,7 @@ setInterval(function () {
     console.log('slide changed !');
     $('.nav-dot').removeClass('active');
     var $activeDot = $('.nav-dot[data-slide="' + $('.panel._active').data('slide') + '"]');
+    console.log();
     $activeDot.addClass('active');
   });
 
