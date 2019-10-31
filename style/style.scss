@@ -36,6 +36,8 @@ $dark-theme-color: #1C1401;
 }
 
 
+
+
 /*slider*/
 
 .wrapper {
@@ -47,7 +49,9 @@ $dark-theme-color: #1C1401;
   max-height: 100%;
   background: $color-link;
   overflow: hidden;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5)
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  display: none;
+  
 }
 
 .panel {
@@ -206,6 +210,80 @@ $dark-theme-color: #1C1401;
         }
     }
 }
+
+
+.wrap{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  background: url(../images/bg_start.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;  
+  .wellcome {
+    position: absolute;
+    top: 50%;
+   height: 300px;
+   transform: translateY(-50%);
+
+    .offer-letters{
+      padding: 0 !important;
+       h2 {
+        @extend %headings;
+        font-size: 75px;
+        font-family: $font-mono;
+    }
+
+    h4 {
+        @extend %headings;
+    }
+    }
+   
+
+    a {
+        font-size: 14px;
+        font-family: $font-mono;
+        letter-spacing: 2px;
+        color: #ffffff;
+        text-transform: lowercase;
+        overflow: hidden;
+        z-index: 50;
+
+        &:hover {
+            color: #ffffff;
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(240deg, rgb(212, 167, 4), rgb(228, 181, 12), rgb(236, 192, 33), rgb(223, 180, 25), rgb(238, 198, 53), rgb(241, 205, 74), rgb(238, 209, 106), rgb(223, 201, 121), #ffffff);
+            background-size: 200%;
+            background-position: center;
+            transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            content: "замовити";
+
+        }
+
+        &:hover::before {
+            background-position: right;
+        }
+
+
+    }
+
+}
+  
+}
+
+
 
 .slide-text{
  z-index: 50;
