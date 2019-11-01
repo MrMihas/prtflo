@@ -1,3 +1,45 @@
+// (function() {
+//   var blocks = document.querySelectorAll(".block");
+
+//   for(var i = 0; i < blocks.length; i++) {
+//     blocks[i].addEventListener("click", function() {
+//       for(var j = 0; j < blocks.length; j++) {
+//         blocks[j].classList.remove("active");
+//       }
+
+//       this.classList.add("active");
+//     }, false);
+//   }
+// })();
+
+
+
+let descOne = document.querySelectorAll('.description');
+let showOne = document.querySelectorAll('.show');
+
+
+for (var i = 0; i < showOne.length; i++) {
+showOne[i].addEventListener('click', function(){
+
+    for (var k = 0; k < descOne.length; k++) {
+      descOne[k].classList.remove('active');
+    }
+    descOne[k].classList.add('active');
+}, false);
+
+
+  // showOne.onclick = function(){
+  // descOne.classList.toggle('active');
+  // alert();
+  
+// }
+}
+
+
+
+
+
+
 
 // собираем все якоря; устанавливаем время анимации и количество кадров
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),

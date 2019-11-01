@@ -36,6 +36,10 @@ $dark-theme-color: #1C1401;
 }
 
 
+a:hover{
+  text-decoration: none !important;
+}
+
 
 
 /*slider*/
@@ -188,10 +192,10 @@ $dark-theme-color: #1C1401;
 /*===menu====*/
 
 .nav-block {
+  position: absolute;
 
     nav {
       
-  background: rgba(0,0,0,0.7);
       z-index: 30;
         ul {
             li {
@@ -416,6 +420,93 @@ $dark-theme-color: #1C1401;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+
+.show{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: rgb(53, 149, 236);;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+
+  
+    &:before{
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 30px;
+      background: #fff;
+     }
+
+     &:after{
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background: #fff;
+
+    }
+    
+    
+}
+    .description{
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(53, 149, 236, 0.6);
+
+
+      .description__title{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #fff;
+          font-size: 25px;
+          display: inline;
+
+            &:hover{
+              text-decoration: none;
+              .hover-show{
+                        display: inline;
+                        }
+            }
+
+          }
+
+          .description__link{
+                position: absolute;
+                bottom: 25px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: inherit;
+                font-size: 13px;
+                color: #f1f1f1;
+                border: 1px solid #f1f1f1;
+                border-radius: 5px;
+                  
+
+                &:hover{
+                  color: #ffffff;
+                  border: 1px solid #ffffff;
+                  box-shadow: 0 11px 10px rgba(255,255,255,0.2);
+                }
+                
+          }
+          &.active{
+            display: block;
+            
+          }
+
+    }
     
         a{
             @extend %about__heading;

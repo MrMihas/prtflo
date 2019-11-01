@@ -23,6 +23,10 @@
   text-transform: uppercase;
 }
 
+a:hover {
+  text-decoration: none !important;
+}
+
 /*slider*/
 .wrapper {
   position: relative;
@@ -187,8 +191,10 @@
 }
 
 /*===menu====*/
+.nav-block {
+  position: absolute;
+}
 .nav-block nav {
-  background: rgba(0, 0, 0, 0.7);
   z-index: 30;
 }
 .nav-block nav ul li a {
@@ -338,6 +344,85 @@
 .portfolio__works .uk-card {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+.portfolio__works .uk-card .show {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: #3595ec;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.portfolio__works .uk-card .show:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 30px;
+  background: #fff;
+}
+.portfolio__works .uk-card .show:after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #fff;
+}
+.portfolio__works .uk-card .description {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(53, 149, 236, 0.6);
+}
+.portfolio__works .uk-card .description .description__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 25px;
+  display: inline;
+}
+.portfolio__works .uk-card .description .description__title:hover {
+  text-decoration: none;
+}
+.portfolio__works .uk-card .description .description__title:hover .hover-show {
+  display: inline;
+}
+.portfolio__works .uk-card .description .description__link {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: inherit;
+  font-size: 13px;
+  color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+}
+.portfolio__works .uk-card .description .description__link:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0 11px 10px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 11px 10px rgba(255, 255, 255, 0.2);
+}
+.portfolio__works .uk-card .description.active {
+  display: block;
 }
 .portfolio__works .uk-card a {
   -webkit-transition: 0.2s;
